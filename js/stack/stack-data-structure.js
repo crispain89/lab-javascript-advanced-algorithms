@@ -5,23 +5,38 @@ class Stack {
   }
 
   canPush() {
-    // ... your code goes here
+    if (this.stackControl.length < this.MAX_SIZE) return true
+   return false 
   }
 
   isEmpty() {
-    // ... your code goes here
+    if (this.stackControl.length === 0) return true
+    return false
   }
 
   push(item) {
-    // ... your code goes here
-  }
+    let noLlena = this.canPush();
+    if (noLlena) {
+      this.stackControl.push(item)
+      return this.display()
+    } else {
+
+      throw new Error('STACK_OVERFLOW');
+    }
+
+}
 
   pop() {
-    // ... your code goes here
+    if (!this.isEmpty()) {
+      return this.stackControl.pop();
+    } else { 
+      throw new Error('STACK_UNDERFLOW');
+    }
+   
   }
 
   display() {
-    // ... your code goes here
+   return this.stackControl
   }  
 }
 

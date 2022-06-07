@@ -30,15 +30,18 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    //deberiamos añadir al 
+    
   } catch (error) {
-    // there was an overflow error, handle it
+
+  
+
   }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+ 
   } catch (error) {
     // there was an underflow error, handle it
   }

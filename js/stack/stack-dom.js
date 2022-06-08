@@ -15,7 +15,10 @@ const clearStackInput = () => {
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  const list = `
+    <ul>
+    </ul>
+  `
 };
 
 renderListStack();
